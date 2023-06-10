@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+
+
+    <style>
+        /* <Your codes here> */
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }/*set image size and radius to fit in circle*/
+        .profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            align-self: center;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(255, 122, 122);
+            border-radius: 5px;
+            border-color: transparent;
+            width: 80px;
+            height: 30px;
+        }/*give button style*/
+    </style>
+</head>
+
+<body>
+
+
+
+<div class="profile">
+    <!-- for the profile image -->
+    <!-- Hints: refer to the data of the testIds.js -->
+    <!-- Uses the "<%= %>" tags. -->
+
+    <!-- Your codes here -->
+    <img src="<%= photo %>"> <!-- put photo -->
+    <!-- the user information(name, student number) -->
+    <!-- Hints: refer to the data of the testIds.js -->
+    <div class="profile-info">
+        <!-- Your codes here -->
+        <h1>Name : <%= userName %></h1> <!-- put number -->
+        <h3>Student Number : <%= classnumber %></h3><!-- put student number-->
+    </div>
+
+    <!-- the logout button -->
+
+    <!-- Your codes here -->
+    <form method="GET" action="/logout">                <!-- give function to button -->
+        <button id="logoutButton",value="login">Logout</button> <!-- put button -->
+    </form> <!-- close form -->
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+    <style>
+        /* <Your codes here> (bonus points) */
+        h1{
+            text-align: center;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            text-align: start;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"]{
+            border-radius: 5px;
+            margin-bottom: 10px;
+            height: 40px;
+            border-color: lightgrey solid #ccc;
+            border-width: 3px;
+            
+        }
+        button{
+            align-self: center;
+            color: white;
+            font-size: 20px;
+            background-color: green;
+            border-radius: 5px;
+            border-color: transparent;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<form method="POST" action="/login">
+    <h1>Login</h1>
+
+    <!-- the input box and label for user Id -->
+    <label for="userId">ID</label>
+    <input type="text" id="userId" name="userId"/>
+
+    <!-- the input box and label for user password -->
+
+    <!-- Your codes here -->
+    <label for="password">Password</label> <!-- password text -->
+    <input type="password" id="password" name="password"/> <!-- password input box -->
+    <!-- the login button -->
+    
+    <!-- Your codes here -->
+    <button id="loginButton",value="login">Login</button> <!-- login button -->
+</form>
+
+
+
+</body>
+</html>
